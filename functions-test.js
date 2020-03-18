@@ -1,6 +1,7 @@
 var assert = require('chai').assert;
 var addTwoNumbers = require('./functions.js').addTwoNumbers;
 var sayHello = require('./functions.js').sayHello;
+var buildCar = require('./functions.js').buildCar;
 
 describe('functions', function() {
   describe('addTwoNumbers', function() {
@@ -64,6 +65,41 @@ describe('functions', function() {
 
       // assert what the result SHOULD be
       assert.equal(result, 'No more testing Will!')
+    })
+  })
+
+  describe('buildCar', function() {
+    it.skip('should return a car with a color', function() {
+      // setup for test (if necessary)
+      var color = 'red'
+      
+      // execute function
+      var result = buildCar(color)
+
+      // assert what the result SHOULD be
+      assert.equal(result.color, color)
+    })
+
+    it.skip('should return a car with a type', function() {
+      // setup for test (if necessary)
+      var color = 'red'
+      var type = 'truck'
+      
+      // execute function
+      var result = buildCar(color, type)
+
+      // assert what the result SHOULD be
+      assert.equal(result.type, type)
+    })
+
+    it.skip('should return an empty object if there are no details passed', function() {
+      // setup for test (if necessary)
+      
+      // execute function
+      var result = buildCar()
+
+      // assert what the result SHOULD be
+      assert.deepEqual(result, {})
     })
   })
 })
