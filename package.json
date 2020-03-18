@@ -1,0 +1,15 @@
+{
+  "name": "first-unit-tests",
+  "version": "1.0.0",
+  "description": "Repo for learning to write basic unit tests in JavaScript",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha *-test.js"
+  },
+  "author": "wvmitchell@gmail.com",
+  "license": "ISC",
+  "dependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^7.1.1"
+  }
+}
