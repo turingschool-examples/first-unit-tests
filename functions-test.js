@@ -1,11 +1,15 @@
+// functions-test.js
+
 var assert = require('chai').assert;
 var addTwoNumbers = require('./functions.js').addTwoNumbers;
 var sayHello = require('./functions.js').sayHello;
 var buildCar = require('./functions.js').buildCar;
 
 describe('functions', function() {
+
   describe('addTwoNumbers', function() {
-    it('should be able to add zero to zero', function() {
+
+    it.skip('should be able to add zero to zero', function() {
       // setup for test (if necessary)
       
       // execute function
