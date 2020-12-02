@@ -11,4 +11,3 @@ Clone the repository: `git clone git@github.com:turingschool-examples/first-unit
 CD into the directory: `cd first-unit-tests`  
 Install dependencies: `npm install`  
 Run the tests: `npm test`  
-Make them pass!  
