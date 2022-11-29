@@ -5,105 +5,69 @@ var addTwoNumbers = require('./functions.js').addTwoNumbers;
 var sayHello = require('./functions.js').sayHello;
 var buildCar = require('./functions.js').buildCar;
 
-describe('functions', function() {
-
-  describe('addTwoNumbers', function() {
-
-    it.skip('should be able to add zero to zero', function() {
+describe('functions', function () {
+  describe('addTwoNumbers', function () {
+    it.skip('should be able to add zero to zero', function () {
       // setup for test (if necessary)
-      
+
       // execute function
-      var result = addTwoNumbers(0, 0)
+      var sum = addTwoNumbers(0, 0)
 
       // assert what the result SHOULD be
-      assert.equal(result, 0)
+      assert.equal(sum, 0)
     })
 
-    it.skip('should be able to add 1 to 0', function() {
-      // setup for test (if necessary)
-
-      // execute function
-      var result = addTwoNumbers(1, 0)
-
-      // assert what the result SHOULD be
-      assert.equal(result, 1)
+    it.skip('should be able to add 1 to 0', function () {
+      assert.equal(addTwoNumbers(1, 0), 1)
     })
 
-    it.skip('should be able to add 1 to 1', function() {
-      // setup for test (if necessary)
-
-      // execute function
-      var result = addTwoNumbers(1, 1)
-
-      // assert what the result SHOULD be
-      assert.equal(result, 2)
+    it.skip('should be able to add 1 to 1', function () {
+      assert.equal(addTwoNumbers(1, 1), 2)
     })
   })
 
-  describe('sayHello', function() {
-    it.skip('should be able to say hello to Leta', function() {
+  describe('sayHello', function () {
+    it.skip('should be able to say hello to Leta', function () {
       // setup for test (if necessary)
-      
+
       // execute function
-      var result = sayHello('Leta')
+      var greeting = sayHello('Leta')
 
       // assert what the result SHOULD be
-      assert.equal(result, 'Hi there Leta!')
+      assert.equal(greeting, 'Hi there Leta!')
     })
 
-    it.skip('should be able to say hello to Casey', function() {
-      // setup for test (if necessary)
-      
-      // execute function
-      var result = sayHello('Casey')
-
-      // assert what the result SHOULD be
-      assert.equal(result, 'Hi there Casey!')
+    it.skip('should be able to say hello to Casey', function () {
+      assert.equal(sayHello('Casey'), 'Hi there Casey!')
     })
 
-    it.skip('should not be able to say hello to Will', function() {
-      // setup for test (if necessary)
-      
-      // execute function
-      var result = sayHello('Will')
+    it.skip('should not be able to say hello to Will', function () {
+      var differentMessage = sayHello('Will')
 
-      // assert what the result SHOULD be
-      assert.equal(result, 'No more testing Will!')
+      assert.equal(differentMessage, 'No more testing Will!')
     })
   })
 
-  describe('buildCar', function() {
-    it.skip('should return a car with a color', function() {
+  describe('buildCar', function () {
+    it.skip('should return a car with a color', function () {
       // setup for test (if necessary)
       var color = 'red'
-      
+
       // execute function
-      var result = buildCar(color)
+      var carDetails = buildCar(color)
 
       // assert what the result SHOULD be
-      assert.equal(result.color, color)
+      assert.equal(carDetails.color, color)
     })
 
-    it.skip('should return a car with a type', function() {
-      // setup for test (if necessary)
-      var color = 'red'
-      var type = 'truck'
-      
-      // execute function
-      var result = buildCar(color, type)
+    it.skip('should return a car with a type', function () {
+      var carInfo = buildCar('red', 'truck')
 
-      // assert what the result SHOULD be
-      assert.equal(result.type, type)
+      assert.equal(carInfo.type, type)
     })
 
-    it.skip('should return an empty object if there are no details passed', function() {
-      // setup for test (if necessary)
-      
-      // execute function
-      var result = buildCar()
-
-      // assert what the result SHOULD be
-      assert.deepEqual(result, {})
+    it.skip('should return an empty object if there are no details passed', function () {
+      assert.deepEqual(buildCar(), {})
     })
   })
 })
