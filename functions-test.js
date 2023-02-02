@@ -63,7 +63,7 @@ describe('functions', function () {
     it.skip('should return a car with a type', function () {
       var carInfo = buildCar('red', 'truck')
 
-      assert.equal(carInfo.type, type)
+      assert.equal(carInfo.type, 'truck')
     })
 
     it.skip('should return an empty object if there are no details passed', function () {
