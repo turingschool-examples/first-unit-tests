@@ -10,5 +10,5 @@ already been written for you, and implement code to make them pass.
 Clone the repository: `git clone git@github.com:turingschool-examples/first-unit-tests.git`  
 CD into the directory: `cd first-unit-tests`  
 Install dependencies: `npm install`  
-Open in your text editor.  For example: `atom .`  
+Open in your text editor.  For example: `code .`  
 Run the tests: `npm test`  
